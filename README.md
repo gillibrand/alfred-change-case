@@ -1,16 +1,11 @@
-Change Case Workflow for Alfred
-===============================
+# Change Case — Workflow for Alfred
 
-Changes the case of text on the clipboard to uppercase, lowercase, or title case. All three styles are previewed in Alfred.
+Changes the case of text on the clipboard to uppercase, lowercase, or title case.
 
-Usage
------
+![Screenshot](change_case.png)
 
-Change the case of text of text on the keyboard with:
+## Usage
 
-    case
+Change the case of text on the keyboard with the keyword `case`. All three styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
 
-Or type some text directly:
-
-    case change this text
-
+Optionally, any text type after `case` will be changed instead of the clipboard.
