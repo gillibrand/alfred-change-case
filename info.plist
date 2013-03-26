@@ -17,17 +17,6 @@
 				<string></string>
 			</dict>
 		</array>
-		<key>638BC060-2982-4BA9-86EC-7FB547438B75</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>120913BE-7A34-4EA4-A8A1-BDCE5F034458</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Jay Gillibrand</string>
@@ -39,29 +28,6 @@
 	<string>Change Case</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>argumenttext</key>
-				<string>case </string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>638BC060-2982-4BA9-86EC-7FB547438B75</string>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -110,20 +76,15 @@ Optionally, any text type after case will be changed instead of the clipboard.</
 		<key>120913BE-7A34-4EA4-A8A1-BDCE5F034458</key>
 		<dict>
 			<key>ypos</key>
-			<real>150</real>
+			<real>120</real>
 		</dict>
 		<key>48FA1057-4D68-48B5-BB44-CBC28130A414</key>
 		<dict>
 			<key>ypos</key>
 			<real>130</real>
 		</dict>
-		<key>638BC060-2982-4BA9-86EC-7FB547438B75</key>
-		<dict>
-			<key>ypos</key>
-			<real>120</real>
-		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>https://github.com/gillibrand/alfred-change-case</string>
 </dict>
 </plist>
