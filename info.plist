@@ -17,6 +17,17 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>120913BE-7A34-4EA4-A8A1-BDCE5F034458</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Jay Gillibrand</string>
@@ -28,19 +39,6 @@
 	<string>Change Case</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -66,6 +64,42 @@
 			<key>uid</key>
 			<string>120913BE-7A34-4EA4-A8A1-BDCE5F034458</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>hotkey</key>
+				<integer>8</integer>
+				<key>hotmod</key>
+				<integer>393216</integer>
+				<key>hotstring</key>
+				<string>C</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3EEC7A2D-486C-4756-A271-FAD9448441C8</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Change the case of text on the keyboard with the keyword case. All three styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
@@ -78,10 +112,15 @@ Optionally, any text type after case will be changed instead of the clipboard.</
 			<key>ypos</key>
 			<real>120</real>
 		</dict>
+		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
 		<key>48FA1057-4D68-48B5-BB44-CBC28130A414</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>120</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
