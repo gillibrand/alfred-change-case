@@ -2,7 +2,7 @@
 
 Changes the case of text on the clipboard to uppercase, lowercase, or title case.
 
-[Download the pre-built workflow](http://cl.ly/NvSs).
+[Download the pre-built workflow](http://cl.ly/O2Gj).
 
 ![Screenshot](changecase.png)
 
