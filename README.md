@@ -2,7 +2,7 @@
 
 Changes the case of text on the clipboard to uppercase, lowercase, or title case.
 
-[Download the pre-built workflow](http://cl.ly/O2Gj).
+[Download the workflow](http://cl.ly/O7Rb).
 
 ![Screenshot](changecase.png)
 
@@ -12,6 +12,11 @@ Change the case of text on the keyboard with the keyword `case`. All three style
 
 Optionally, any text typed after `case` will be changed instead of the clipboard. 
 
+## Version History
+
+### 4/6/2013
+
+- Title case will now leave common acronyms as uppercase (HTML, XML, etc.).
 
 ## Credits
 

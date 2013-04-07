@@ -93,7 +93,7 @@
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
@@ -115,12 +115,12 @@ Optionally, any text type after case will be changed instead of the clipboard.</
 		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
 		<dict>
 			<key>ypos</key>
-			<real>120</real>
+			<real>130</real>
 		</dict>
 		<key>48FA1057-4D68-48B5-BB44-CBC28130A414</key>
 		<dict>
 			<key>ypos</key>
-			<real>120</real>
+			<real>130</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
