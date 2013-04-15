@@ -2,7 +2,7 @@
 
 Changes the case of text on the clipboard to uppercase, lowercase, or title case.
 
-[Download the workflow](http://cl.ly/O7Rb).
+[Download the workflow](https://github.com/gillibrand/alfred-change-case/raw/master/Change%20Case.alfredworkflow).
 
 ![Screenshot](changecase.png)
 
