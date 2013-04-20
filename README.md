@@ -14,6 +14,10 @@ Optionally, any text typed after `case` will be changed instead of the clipboard
 
 ## Version History
 
+### 4/19/2013
+
+- Always sorts the case styles in the same order now: lowercase, uppercase, then title case. (Removed the `uid` from results returned to Alfred as supported in Alfred 2.0.3.)
+
 ### 4/6/2013
 
 - Title case will now leave common acronyms as uppercase (HTML, XML, etc.).

@@ -34,17 +34,17 @@ variations = {
 
 print """<?xml version="1.0"?>
 <items>
-  <item uid="changecase-lower" arg="%(lower)s">
+  <item arg="%(lower)s">
     <title>%(lower)s</title>
     <subtitle>Lowercase</subtitle>
     <icon>lowercase.png</icon>
   </item>
-  <item uid="changecase-upper" arg="%(upper)s">
+  <item arg="%(upper)s">
     <title>%(upper)s</title>
     <subtitle>Uppercase</subtitle>
     <icon>uppercase.png</icon>
   </item>
-  <item uid="changecase-title" arg="%(title)s">
+  <item arg="%(title)s">
     <title>%(title)s</title>
     <subtitle>Title Case</subtitle>
     <icon>titlecase.png</icon>
