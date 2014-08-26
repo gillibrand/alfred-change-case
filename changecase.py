@@ -34,15 +34,15 @@ variations = {
 
 print """<?xml version="1.0"?>
 <items>
-  <item arg="%(lower)s">
-    <title>%(lower)s</title>
-    <subtitle>Lowercase</subtitle>
-    <icon>lowercase.png</icon>
-  </item>
   <item arg="%(upper)s">
     <title>%(upper)s</title>
     <subtitle>Uppercase</subtitle>
     <icon>uppercase.png</icon>
+  </item>
+  <item arg="%(lower)s">
+    <title>%(lower)s</title>
+    <subtitle>Lowercase</subtitle>
+    <icon>lowercase.png</icon>
   </item>
   <item arg="%(title)s">
     <title>%(title)s</title>
