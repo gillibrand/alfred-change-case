@@ -1,18 +1,27 @@
 # Change Case — Workflow for Alfred
 
-Changes the case of text on the clipboard to uppercase, lowercase, or title case.
+Changes the case of text selected, provided, or on the clipboard to UPPERCASE, lowercase, Title Case, CamelCase, kebab-case, or snake_case.
 
-[Download the workflow](https://github.com/gillibrand/alfred-change-case/raw/master/Change%20Case.alfredworkflow).
+[Download the workflow](https://github.com/blizzrdof77/alfred-change-case/raw/master/Change%20Case.alfredworkflow).
 
-![Screenshot](changecase.png)
+![Screenshot](changecase.jpg)
 
 ## Usage
 
-Change the case of text on the keyboard with the keyword `case`. All three styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
+Change the case of text on the keyboard with the keyword `case` (or `tt` or `transform`). All six styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
 
-Optionally, any text typed after `case` will be changed instead of the clipboard. 
+Optionally, any text typed after `case` will be changed instead of the clipboard.
+
+Manage the keybinding (set to `Cmd+Opt+Ctrl+Shift+t` by default) to transform the currently selected text.
 
 ## Version History
+
+### 8/21/2018
+
+- Added CamelCase, kebab-case, and snake_case options
+- Updated/Removed Icons
+- Added keybinding for text selection transformation
+- Added additional keywords "tt" and "transform" to default workflow options
 
 ### 4/19/2013
 
@@ -26,3 +35,4 @@ Optionally, any text typed after `case` will be changed instead of the clipboard
 
 - Workflow by Jay Gillibrand.
 - `titlecase` module by [Stuart Colville](http://muffinresearch.co.uk).
+- `CamelCase`, `kebab-case`, and `snake_case` additions added by [Ben Wagner](https://blizzrdof77.com)
