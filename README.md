@@ -2,7 +2,7 @@
 
 Changes the case of text selected, provided, or on the clipboard to UPPERCASE, lowercase, Title Case, CamelCase, kebab-case, or snake_case.
 
-[Download the workflow](https://github.com/gillibrand/alfred-change-case/blob/master/Change%20Case.alfredworkflow?raw=true).
+[Download the workflow](https://github.com/gillibrand/alfred-change-case/blob/master/Change%20Case.alfredworkflow).
 
 ![Screenshot](changecase.png)
 
@@ -12,21 +12,12 @@ Change the case of text on the keyboard with the keyword `case`. All six styles 
 
 Optionally, any text typed after `case` will be changed instead of the clipboard.
 
-Manage the keybinding (set to `Cmd+Opt+Ctrl+Shift+t` by default) to transform the currently selected text.
-
 ## Version History
 
 ### 9/9/2018
 
-- Updated icons and added additional cases to match original style 👍
-- Added CamelCase, kebab-case, and snake_case to icons.acorn layered file
-
-### 8/21/2018
-
 - Added CamelCase, kebab-case, and snake_case options
-- Updated/Removed Icons
-- Added keybinding for text selection transformation
-- Added additional keywords "tt" and "transform" to default workflow options
+- Added additional keywords "tt" and "transform"
 
 ### 4/19/2013
 

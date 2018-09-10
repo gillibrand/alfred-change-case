@@ -39,33 +39,33 @@ variations = {
 print """<?xml version="1.0"?>
 <items>
   <item arg="%(lower)s">
-    <title>"%(lower)s"</title>
-    <subtitle>Transform text to `lowercase`</subtitle>
+    <title>%(lower)s</title>
+    <subtitle>lowercase</subtitle>
     <icon>lowercase.png</icon>
   </item>
   <item arg="%(upper)s">
-    <title>"%(upper)s"</title>
-    <subtitle>Transform text to `UPPERCASE`</subtitle>
+    <title>%(upper)s</title>
+    <subtitle>UPPERCASE</subtitle>
     <icon>uppercase.png</icon>
   </item>
   <item arg="%(title)s">
-    <title>"%(title)s"</title>
-    <subtitle>Transform text to `Title Case`</subtitle>
+    <title>%(title)s</title>
+    <subtitle>Title Case</subtitle>
     <icon>titlecase.png</icon>
   </item>
   <item arg="%(camel)s">
-    <title>"%(camel)s"</title>
-    <subtitle>Transform text to `CamelCase`</subtitle>
+    <title>%(camel)s</title>
+    <subtitle>CamelCase</subtitle>
     <icon>camelcase.png</icon>
   </item>
   <item arg="%(kebab)s">
-    <title>"%(kebab)s"</title>
-    <subtitle>Transform text to hyphenated `kebab-case`</subtitle>
+    <title>%(kebab)s</title>
+    <subtitle>kebab-case</subtitle>
     <icon>kebabcase.png</icon>
   </item>
   <item arg="%(snake)s">
-    <title>"%(snake)s"</title>
-    <subtitle>Transform text to `snake_case`</subtitle>
+    <title>%(snake)s</title>
+    <subtitle>snake_case</subtitle>
     <icon>snakecase.png</icon>
   </item>
 

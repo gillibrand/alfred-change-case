@@ -21,19 +21,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B6600E5C-BB57-4054-827B-5688E776AEE7</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B6600E5C-BB57-4054-827B-5688E776AEE7</key>
 		<array>
 			<dict>
@@ -64,11 +51,11 @@
 	<key>createdby</key>
 	<string>Jay Gillibrand</string>
 	<key>description</key>
-	<string>Change text case to upper, lower, title, camel, kebab, or snake.</string>
+	<string>Changes the case of text on the clipboard.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Change/Transform Text Case</string>
+	<string>Change Case</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -185,37 +172,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>3EEC7A2D-486C-4756-A271-FAD9448441C8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -262,9 +218,9 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Change the case of text on the keyboard with the keyword case. All three styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
+	<string>Change the case of text on the keyboard with the keyword case. All styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
 
-Optionally, any text type after case will be changed instead of the clipboard.</string>
+Optionally, any text typed after `case` will be changed instead of the clipboard.</string>
 	<key>uidata</key>
 	<dict>
 		<key>272A1B72-8F54-4B5F-831A-8787D7264102</key>
@@ -273,13 +229,6 @@ Optionally, any text type after case will be changed instead of the clipboard.</
 			<integer>440</integer>
 			<key>ypos</key>
 			<integer>330</integer>
-		</dict>
-		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
-		<dict>
-			<key>xpos</key>
-			<integer>260</integer>
-			<key>ypos</key>
-			<integer>220</integer>
 		</dict>
 		<key>48FA1057-4D68-48B5-BB44-CBC28130A414</key>
 		<dict>
@@ -303,6 +252,8 @@ Optionally, any text type after case will be changed instead of the clipboard.</
 			<integer>110</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/gillibrand/alfred-change-case</string>
 </dict>
