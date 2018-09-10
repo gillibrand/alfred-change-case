@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>CCBE2CE0-D301-463D-A9DC-36C98D2A7030</string>
+				<string>B6600E5C-BB57-4054-827B-5688E776AEE7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -64,7 +64,7 @@
 	<key>createdby</key>
 	<string>Jay Gillibrand</string>
 	<key>description</key>
-	<string>Change text to upper, lower, title, camel, kebab, or snake case.</string>
+	<string>Change text case to upper, lower, title, camel, kebab, or snake.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -103,7 +103,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Change the case to upper, lower, title, camel, kebab, or snake case...</string>
+				<string>Change the case to upper, lower, title, camel, kebab, or snake case.</string>
 				<key>title</key>
 				<string>Change/Transform Text Case</string>
 				<key>type</key>
@@ -115,54 +115,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>CCBE2CE0-D301-463D-A9DC-36C98D2A7030</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>17</integer>
-				<key>hotmod</key>
-				<integer>1966080</integer>
-				<key>hotstring</key>
-				<string>T</string>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>3EEC7A2D-486C-4756-A271-FAD9448441C8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -210,6 +162,54 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>B6600E5C-BB57-4054-827B-5688E776AEE7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>1</integer>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>17</integer>
+				<key>hotmod</key>
+				<integer>1966080</integer>
+				<key>hotstring</key>
+				<string>T</string>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.hotkey</string>
+			<key>uid</key>
+			<string>3EEC7A2D-486C-4756-A271-FAD9448441C8</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -270,40 +270,40 @@ Optionally, any text type after case will be changed instead of the clipboard.</
 		<key>272A1B72-8F54-4B5F-831A-8787D7264102</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>400</integer>
+			<integer>330</integer>
 		</dict>
 		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
 		<dict>
 			<key>xpos</key>
 			<integer>260</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>220</integer>
 		</dict>
 		<key>48FA1057-4D68-48B5-BB44-CBC28130A414</key>
 		<dict>
 			<key>xpos</key>
-			<integer>700</integer>
+			<integer>710</integer>
 			<key>ypos</key>
-			<integer>270</integer>
+			<integer>220</integer>
 		</dict>
 		<key>B6600E5C-BB57-4054-827B-5688E776AEE7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>290</integer>
+			<integer>220</integer>
 		</dict>
 		<key>CCBE2CE0-D301-463D-A9DC-36C98D2A7030</key>
 		<dict>
 			<key>xpos</key>
-			<integer>410</integer>
+			<integer>440</integer>
 			<key>ypos</key>
-			<integer>180</integer>
+			<integer>110</integer>
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string>https://github.com/blizzrdof77/alfred-change-case</string>
+	<string>https://github.com/gillibrand/alfred-change-case</string>
 </dict>
 </plist>

@@ -41,32 +41,32 @@ print """<?xml version="1.0"?>
   <item arg="%(lower)s">
     <title>"%(lower)s"</title>
     <subtitle>Transform text to `lowercase`</subtitle>
-    <icon>icon.png</icon>
+    <icon>lowercase.png</icon>
   </item>
   <item arg="%(upper)s">
     <title>"%(upper)s"</title>
     <subtitle>Transform text to `UPPERCASE`</subtitle>
-    <icon>icon.png</icon>
+    <icon>uppercase.png</icon>
   </item>
   <item arg="%(title)s">
     <title>"%(title)s"</title>
     <subtitle>Transform text to `Title Case`</subtitle>
-    <icon>icon.png</icon>
+    <icon>titlecase.png</icon>
   </item>
   <item arg="%(camel)s">
     <title>"%(camel)s"</title>
     <subtitle>Transform text to `CamelCase`</subtitle>
-    <icon>icon.png</icon>
+    <icon>camelcase.png</icon>
   </item>
   <item arg="%(kebab)s">
     <title>"%(kebab)s"</title>
     <subtitle>Transform text to hyphenated `kebab-case`</subtitle>
-    <icon>icon.png</icon>
+    <icon>kebabcase.png</icon>
   </item>
   <item arg="%(snake)s">
     <title>"%(snake)s"</title>
     <subtitle>Transform text to `snake_case`</subtitle>
-    <icon>icon.png</icon>
+    <icon>snakecase.png</icon>
   </item>
 
 </items>""" % variations
