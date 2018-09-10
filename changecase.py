@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# 
+#
 import re, sys
 from xml.sax.saxutils import escape
 from titlecase import titlecase
@@ -29,19 +29,23 @@ def titlecase_plus(text):
 variations = {
   'lower': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ),
   'upper': escape(text.upper(), {'"': '&quot;', '\n': '&#10;'} ),
-  'title': escape(titlecase_plus(text), {'"': '&quot;', '\n': '&#10;'} )
+  'title': escape(titlecase_plus(text), {'"': '&quot;', '\n': '&#10;'} ),
+  'camel': escape(titlecase_plus(text), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', ''),
+  'kebab': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '-').replace('_', '-'),
+  'snake': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '_').replace('-', '_')
+
 }
 
 print """<?xml version="1.0"?>
 <items>
   <item arg="%(lower)s">
     <title>%(lower)s</title>
-    <subtitle>Lowercase</subtitle>
+    <subtitle>lowercase</subtitle>
     <icon>lowercase.png</icon>
   </item>
   <item arg="%(upper)s">
     <title>%(upper)s</title>
-    <subtitle>Uppercase</subtitle>
+    <subtitle>UPPERCASE</subtitle>
     <icon>uppercase.png</icon>
   </item>
   <item arg="%(title)s">
@@ -49,4 +53,20 @@ print """<?xml version="1.0"?>
     <subtitle>Title Case</subtitle>
     <icon>titlecase.png</icon>
   </item>
+  <item arg="%(camel)s">
+    <title>%(camel)s</title>
+    <subtitle>CamelCase</subtitle>
+    <icon>camelcase.png</icon>
+  </item>
+  <item arg="%(kebab)s">
+    <title>%(kebab)s</title>
+    <subtitle>kebab-case</subtitle>
+    <icon>kebabcase.png</icon>
+  </item>
+  <item arg="%(snake)s">
+    <title>%(snake)s</title>
+    <subtitle>snake_case</subtitle>
+    <icon>snakecase.png</icon>
+  </item>
+
 </items>""" % variations

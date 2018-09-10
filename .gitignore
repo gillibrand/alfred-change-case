@@ -1,1 +1,28 @@
+# Common
+*.bak
+ignore/
+
+# OS Junk Files
+Thumbs.db
+Desktop.in
+.DS_Store
+__MACOSX/
+
+# IDE Stuff
+*.sublime-workspace
+.idea/
+.phpintel/
+.vscode/
+
+# Package Management
+node_modules/
+
+# Logs
+*.log
+
+# Private Files & Folders
+private/
+icons/
+
+# Compiled
 *.pyc

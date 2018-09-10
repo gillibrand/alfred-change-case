@@ -4,9 +4,11 @@
 <dict>
 	<key>bundleid</key>
 	<string>gillibrand.jay.changecase</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
-		<key>120913BE-7A34-4EA4-A8A1-BDCE5F034458</key>
+		<key>272A1B72-8F54-4B5F-831A-8787D7264102</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -15,17 +17,34 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
-		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
+		<key>B6600E5C-BB57-4054-827B-5688E776AEE7</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>120913BE-7A34-4EA4-A8A1-BDCE5F034458</string>
+				<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>CCBE2CE0-D301-463D-A9DC-36C98D2A7030</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
 			</dict>
 		</array>
 	</dict>
@@ -42,54 +61,38 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>1</integer>
-				<key>hotkey</key>
-				<integer>8</integer>
-				<key>hotmod</key>
-				<integer>393216</integer>
-				<key>hotstring</key>
-				<string>C</string>
-				<key>leftcursor</key>
+				<key>alfredfiltersresults</key>
 				<false/>
-				<key>modsmode</key>
+				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>3EEC7A2D-486C-4756-A271-FAD9448441C8</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<true/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
 				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>62</integer>
 				<key>keyword</key>
-				<string>case</string>
+				<string>tt</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>transforming text case...</string>
 				<key>script</key>
 				<string>pbpaste | python changecase.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>Change the case of text on the clipboard</string>
+				<string>Change the case to upper, lower, title, camel, kebab, or snake case.</string>
 				<key>title</key>
-				<string>Change Case</string>
+				<string>Change/Transform Text Case</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -98,31 +101,159 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>120913BE-7A34-4EA4-A8A1-BDCE5F034458</string>
+			<string>CCBE2CE0-D301-463D-A9DC-36C98D2A7030</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>keyword</key>
+				<string>case</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>transforming text case...</string>
+				<key>script</key>
+				<string>pbpaste | python changecase.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Change the case to upper, lower, title, camel, kebab, or snake case...</string>
+				<key>title</key>
+				<string>Change/Transform Text Case</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B6600E5C-BB57-4054-827B-5688E776AEE7</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<true/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>48FA1057-4D68-48B5-BB44-CBC28130A414</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>62</integer>
+				<key>keyword</key>
+				<string>transform</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>transforming text case...</string>
+				<key>script</key>
+				<string>pbpaste | python changecase.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Change the case to upper, lower, title, camel, kebab, or snake case...</string>
+				<key>title</key>
+				<string>Change/Transform Text Case</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>272A1B72-8F54-4B5F-831A-8787D7264102</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>Change the case of text on the keyboard with the keyword case. All three styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
+	<string>Change the case of text on the keyboard with the keyword case. All styles are previewed as Alfred results. Select one to copy it to the clipboard and paste into in the current application.
 
-Optionally, any text type after case will be changed instead of the clipboard.</string>
+Optionally, any text typed after `case` will be changed instead of the clipboard.</string>
 	<key>uidata</key>
 	<dict>
-		<key>120913BE-7A34-4EA4-A8A1-BDCE5F034458</key>
+		<key>272A1B72-8F54-4B5F-831A-8787D7264102</key>
 		<dict>
+			<key>xpos</key>
+			<integer>440</integer>
 			<key>ypos</key>
-			<real>130</real>
-		</dict>
-		<key>3EEC7A2D-486C-4756-A271-FAD9448441C8</key>
-		<dict>
-			<key>ypos</key>
-			<real>130</real>
+			<integer>330</integer>
 		</dict>
 		<key>48FA1057-4D68-48B5-BB44-CBC28130A414</key>
 		<dict>
+			<key>xpos</key>
+			<integer>710</integer>
 			<key>ypos</key>
-			<real>130</real>
+			<integer>220</integer>
+		</dict>
+		<key>B6600E5C-BB57-4054-827B-5688E776AEE7</key>
+		<dict>
+			<key>xpos</key>
+			<integer>440</integer>
+			<key>ypos</key>
+			<integer>220</integer>
+		</dict>
+		<key>CCBE2CE0-D301-463D-A9DC-36C98D2A7030</key>
+		<dict>
+			<key>xpos</key>
+			<integer>440</integer>
+			<key>ypos</key>
+			<integer>110</integer>
 		</dict>
 	</dict>
+	<key>version</key>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/gillibrand/alfred-change-case</string>
 </dict>
