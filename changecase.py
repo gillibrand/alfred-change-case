@@ -4,6 +4,7 @@
 import re, sys
 from xml.sax.saxutils import escape
 from titlecase import titlecase
+from itertools import cycle
 
 if len(sys.argv) > 1 and len(sys.argv[1].strip()):
 	text = sys.argv[1]
@@ -26,14 +27,18 @@ def titlecase_plus(text):
     return m.group().upper()
   return always_uppercase_re.sub(upcase, text)
 
+def alternate_case(text):
+  funcs = cycle([str.upper, str.lower])
+  return ''.join(next(funcs)(c) for c in text)
+
 variations = {
   'lower': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ),
   'upper': escape(text.upper(), {'"': '&quot;', '\n': '&#10;'} ),
   'title': escape(titlecase_plus(text), {'"': '&quot;', '\n': '&#10;'} ),
   'camel': escape(titlecase_plus(text), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', ''),
   'kebab': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '-').replace('_', '-'),
-  'snake': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '_').replace('-', '_')
-
+  'snake': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '_').replace('-', '_'),
+  'trout': escape(alternate_case(text), {'"': '&quot;', '\n': '&#10;'} ),
 }
 
 print """<?xml version="1.0"?>
@@ -67,6 +72,11 @@ print """<?xml version="1.0"?>
     <title>%(snake)s</title>
     <subtitle>snake_case</subtitle>
     <icon>snakecase.png</icon>
+  </item>
+  <item arg="%(trout)s">
+    <title>"%(trout)s"</title>
+    <subtitle>tRoUtCaSe</subtitle>
+    <icon>troutcase.png</icon>
   </item>
 
 </items>""" % variations
