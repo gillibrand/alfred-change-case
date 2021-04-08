@@ -1,8 +1,10 @@
 # Change Case — Workflow for Alfred
 
-Changes the case of text selected, provided, or on the clipboard to UPPERCASE, lowercase, Title Case, CamelCase, kebab-case, or snake_case.
+Changes the case of text selected, provided, or on the clipboard to UPPERCASE, lowercase, Title Case, CamelCase, kebab-case, or snake_case. Now works with diacritics.
 
-[Download the workflow](https://github.com/gillibrand/alfred-change-case/blob/master/Change%20Case.alfredworkflow).
+[Download the workflow](https://github.com/bpetrynski/alfred-change-case/releases/).
+
+Python 3 is required, [install it before use](https://installpython3.com/mac/).
 
 ![Screenshot](changecase.png)
 
@@ -13,6 +15,9 @@ Change the case of text on the keyboard with the keyword `case`. All six styles 
 Optionally, any text typed after `case` will be changed instead of the clipboard.
 
 ## Version History
+
+### 4/8/2021
+- Support for diacritics by changing interpreter from Python 2 to Python 3.
 
 ### 9/9/2018
 
