@@ -12,7 +12,12 @@ Change the case of text on the keyboard with the keyword `case`. All six styles 
 
 Optionally, any text typed after `case` will be changed instead of the clipboard.
 
+Python 3 is required.
+
 ## Version History
+
+### 4/8/2021
+- Support for diacritics by changing interpreter from Python 2 to Python 3.
 
 ### 9/9/2018
 
