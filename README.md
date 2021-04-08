@@ -2,7 +2,7 @@
 
 Changes the case of text selected, provided, or on the clipboard to UPPERCASE, lowercase, Title Case, CamelCase, kebab-case, or snake_case. Now works with diacritics.
 
-[Download the workflow](https://github.com/gillibrand/alfred-change-case/blob/master/Change%20Case.alfredworkflow).
+[Download the workflow](https://github.com/bpetrynski/alfred-change-case/releases/).
 
 Python 3 is required, [install it before use](https://installpython3.com/mac/).
 
