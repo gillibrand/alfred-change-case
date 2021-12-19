@@ -92,7 +92,7 @@ print """<?xml version="1.0"?>
     <icon>snakecase.png</icon>
   </item>
   <item arg="%(trout)s">
-    <title>"%(trout)s"</title>
+    <title>%(trout)s</title>
     <subtitle>TroUTcAsE</subtitle>
     <icon>troutcase.png</icon>
   </item>
