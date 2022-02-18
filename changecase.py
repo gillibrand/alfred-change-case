@@ -4,6 +4,7 @@
 import re, sys
 from xml.sax.saxutils import escape
 from titlecase import titlecase
+import random
 
 if len(sys.argv) > 1 and len(sys.argv[1].strip()):
 	text = sys.argv[1]
@@ -26,14 +27,36 @@ def titlecase_plus(text):
     return m.group().upper()
   return always_uppercase_re.sub(upcase, text)
 
+# Props to Noah Krim <nkrim62@gmail.com> for this
+# This is copied from https://github.com/nkrim/spongemock/blob/master/src/spongemock.py
+def spongemock(text, diversity_bias=0.5, random_seed=None):
+    # Error handling
+    if diversity_bias < 0 or diversity_bias > 1:
+        raise ValueError('diversity_bias must be between the inclusive range [0,1]')
+    # Seed the random number generator
+    random.seed(random_seed)
+    # Mock the text
+    out = ''
+    last_was_upper = True
+    swap_chance = 0.5
+    for c in text:
+        if c.isalpha():
+            if random.random() < swap_chance:
+                last_was_upper = not last_was_upper
+                swap_chance = 0.5
+            c = c.upper() if last_was_upper else c.lower()
+            swap_chance += (1-swap_chance)*diversity_bias
+        out += c
+    return out
+
 variations = {
   'lower': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ),
   'upper': escape(text.upper(), {'"': '&quot;', '\n': '&#10;'} ),
   'title': escape(titlecase_plus(text), {'"': '&quot;', '\n': '&#10;'} ),
   'camel': escape(titlecase_plus(text), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', ''),
   'kebab': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '-').replace('_', '-'),
-  'snake': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '_').replace('-', '_')
-
+  'snake': escape(text.lower(), {'"': '&quot;', '\n': '&#10;'} ).replace(' ', '_').replace('-', '_'),
+  'trout': escape(spongemock(text), {'"': '&quot;', '\n': '&#10;'} ),
 }
 
 print """<?xml version="1.0"?>
@@ -67,6 +90,11 @@ print """<?xml version="1.0"?>
     <title>%(snake)s</title>
     <subtitle>snake_case</subtitle>
     <icon>snakecase.png</icon>
+  </item>
+  <item arg="%(trout)s">
+    <title>%(trout)s</title>
+    <subtitle>TroUTcAsE</subtitle>
+    <icon>troutcase.png</icon>
   </item>
 
 </items>""" % variations
