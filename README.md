@@ -16,7 +16,7 @@ To assign a global hotkey, view Change Case in Alfred's Workflow editor. Double-
 
 ## Version History
 
-### 3/23/2022
+### 3/23/2022 - 1.5
 
 - Updated to work with macOS Montery (switch to Python 3). Should still work on older systems.
 - Simplified icons that are more visible on dark themes.
