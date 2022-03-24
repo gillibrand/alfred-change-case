@@ -2,7 +2,7 @@
 
 Changes the case of text selected, provided, or on the clipboard to UPPERCASE, lowercase, Title Case, CamelCase, kebab-case, or snake_case.
 
-[Download the workflow](https://github.com/gillibrand/alfred-change-case/releases/latest/download/Change%20Case.alfredworkflow).
+[Download the workflow](https://github.com/gillibrand/alfred-change-case/releases/latest/download/Change.Case.alfredworkflow).
 
 ![Screenshot](changecase.jpg)
 
