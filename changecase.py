@@ -15,9 +15,9 @@ else:
 if len(text.strip()) == 0:
     sys.exit(0)
 
-always_uppercase = r'''\bXML|HTML|CSS|JSON|FYI|AOL|ATM|BBC|CD|FAQ|GAIM|GNU|GTK|HIRD|HIV
-  |HURD|IEEE|IOU|IRA|IUPAC|JPEG|LCD|NAACP|NAC|NATO|NCAA|NOAD|OEM|PHP|ROM|SAT|SFMOMA|SQL|USA|VHDL|VHSIC|W3C
-  |LOL|WTF\b'''
+always_uppercase = r'''\b(?:XML|HTML|CSS|JSON|FYI|AOL|ATM|BBC|CD|FAQ|GAIM|GNU|GTK|HIRD|HIV
+	|HURD|IEEE|IOU|IRA|IUPAC|JPEG|LCD|NAACP|NAC|NATO|NCAA|NOAD|OEM|PHP|ROM|SAT|SFMOMA|SQL|USA|VHDL|VHSIC|W3C
+	|LOL|WTF)\b'''
 always_uppercase_re = re.compile(always_uppercase, re.I | re.X)
 
 
