@@ -1,3 +1,7 @@
+# NOT SUPPORTED in recent Alfred versions
+
+Changes in Alfred and macOS Python broke this extension. Currently, there are **no plans to fix it** since there are several other extensions that do something similar. Thanks for your support if you enjoyed using this in the past. 
+
 # Change Case — Workflow for Alfred
 
 Changes the case of text selected, provided, or on the clipboard to UPPERCASE, lowercase, Title Case, CamelCase, kebab-case, or snake_case.
